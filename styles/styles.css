@@ -2,14 +2,18 @@ body, header, div, h1, h2, h3, p, img{
     margin: 0;
     padding: 0;
 }
-  .container{
-      max-width: 320px;
-      height: 44px;
-      background: #F5F5F5;
-  }
-  header .container-logo{
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      margin: 10px 10px 0px 16px;    
+
+input[type=checkbox]{
+    /*display: none;*/
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+nav ul{
+    display: none;
+}
+#navbar:checked + nav ul {
+    display: block;
   }
