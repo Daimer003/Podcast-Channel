@@ -2,15 +2,43 @@ body, header, div, h1, h2, h3, p, img{
     margin: 0;
     padding: 0;
 }
-
-input[type=checkbox]{
-    /*display: none;*/
+header .container-logo{
+    width: 24px;
+    height: 24px;
+    margin: 10px 16px;
+}  
+header nav{
+    position: absolute;
+    margin-top: 44px;
+    width: 320px;
+    background: #0000EC;
+}  
+header{
+    width: 320px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
+header label .shape{
+  width: 18px;
+  height: 12px;
+  display: grid;
+  grid-template-columns: 18px;
+  grid-template-rows: repeat(3, 2px);
+  grid-row-gap: 3px;
+  margin: 16px 19px;
+  cursor: pointer;
+}  
+header label .shape span{
+    background: #000;
+}
+input[type=checkbox]{
+    display: none;
+}
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
-
 nav ul{
     display: none;
 }
