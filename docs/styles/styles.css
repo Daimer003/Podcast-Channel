@@ -83,7 +83,7 @@ nav ul{
   /*Seccion de sidebar*/
 
   .container-sidebar{
-      width: 100%;
+      max-width: 100%;
       height: auto;
       margin:29px 16px;
   }
