@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
 
 body, header, div, h1, h2, h3, p, img{
     margin: 0;
     padding: 0;
 }
+
 header .container-logo{
     width: 24px;
     height: 24px;
     margin: 10px 16px;
-}  
+} 
+
 header nav{
     position: absolute;
     margin-top: 44px;
     width: 320px;
    
     background: #0000EC;
-}  
+} 
+
 header{
     width: 320px;
     height: 44px;
@@ -23,6 +28,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
+
 header label .shape{
   width: 18px;
   height: 12px;
@@ -33,6 +39,7 @@ header label .shape{
   margin: 16px 19px;
   cursor: pointer;
 }  
+
 header label .shape span{
     background: #000;
 }
@@ -52,20 +59,67 @@ header nav ul li a{
     font-size: 16px;
     text-decoration: none;
     font-family: 'IBM Plex Mono', monospace;
+    font-weight: 200;
     line-height: 28px;
-    letter-spacing: 0;
-    
+    letter-spacing: 0;    
 }
+
 input[type=checkbox]{
     display: none;
 }
+
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
+
 nav ul{
     display: none;
 }
+
 #navbar:checked + nav ul {
     display: block;
   }
+
+  /*Seccion de sidebar*/
+
+  .container-sidebar{
+      width: 100%;
+      height: auto;
+      margin:29px 16px;
+  }
+
+  .container-sidebar h1{
+      display: grid;
+      grid-template-columns: 85px 101px;
+      grid-template-rows: 42px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0;
+      font-weight: 400;
+      
+  } 
+
+  .container-sidebar h1 span:nth-last-of-type(1){
+    text-decoration: solid 2px line-through;
+  }
+
+  .container-sidebar h2{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 212px 10px;
+      grid-template-rows: 42px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0;
+      font-weight: 400;
+  }
+
+
+
+
+ 
+ 
 
