@@ -105,7 +105,7 @@ nav ul{
   }
 
   .container-sidebar h2{
-      width: 100%;
+      max-width: 100%;
       display: grid;
       grid-template-columns: 212px 10px;
       grid-template-rows: 42px;
@@ -115,6 +115,35 @@ nav ul{
       line-height: 42px;
       letter-spacing: 0;
       font-weight: 400;
+  }
+  .container-sidebar .container-parrafo{
+      display: grid;
+      grid-template-columns: 288px;
+      grid-template-rows: 66px 48px;
+      margin-top: 16px;
+  }
+  .container-sidebar .container-parrafo p{
+      font-family: 'IBM Plex Mono', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+  }
+  .container-sidebar .container-parrafo button{
+      background: #00F3BB;
+      border: none;
+      width: 288px;
+      height: 48px;
+      margin-top: 36px;
+  }
+  .container-sidebar .container-parrafo button a{
+      width: 96px;
+      height: 22px;
+      text-decoration: none;
+      font-family: 'IBM Plex Mono', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      color: #060A24;
   }
 
 
