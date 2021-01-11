@@ -4,12 +4,14 @@ body, h1, h2, h3, p, div, span, img, ul {
   padding: 0px; }
 
 body {
-  /*Primer breakpoint*/ }
+  /*Primer breakpoint*/
+  /*------------------------------------------------------Seccion del titulo*/ }
   body header {
     display: flex;
     flex-direction: column;
     max-width: 320px;
     height: 44px;
+    position: relative;
     /*Codigo para la x close*/
     /*Fragmento gerador de la x close*/ }
     body header .container-logo {
@@ -119,3 +121,71 @@ body {
       height: 80px; }
     body label {
       display: none; } }
+  body section {
+    margin: 29px 16px 24px 16px; }
+    body section .container-titulo {
+      display: grid;
+      grid-template-columns: 230px;
+      grid-template-rows: repeat(2, 42px); }
+      body section .container-titulo h1 {
+        display: grid;
+        grid-template-columns: 85px 101px;
+        grid-template-rows: 42px;
+        font-size: 36px;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 42px; }
+        body section .container-titulo h1 span {
+          /*<<<<Pendiente resolver*/
+          margin: auto;
+          right: 0;
+          padding: 0; }
+      body section .container-titulo h2 {
+        display: grid;
+        grid-template-columns: 212px 10px;
+        grid-template-rows: 42px;
+        font-size: 36px;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 42px; }
+    @media screen and (min-width: 900px) {
+      body section .container-titulo {
+        grid-template-columns: 331px 409px;
+        grid-template-rows: 84px; }
+        body section .container-titulo h1 {
+          display: grid;
+          grid-template-columns: 152px 179px;
+          grid-template-rows: 42px;
+          font-size: 64px; }
+        body section .container-titulo h2 {
+          display: grid;
+          grid-template-columns: 391px 18px;
+          grid-template-rows: 42px;
+          font-size: 64px; } }
+    body section p {
+      font-family: "IBM Plex Mono", sans-serif;
+      font-size: 14px;
+      color: #060A24;
+      margin: 16px 0px 0px;
+      letter-spacing: 0;
+      line-height: 22px; }
+    body section button {
+      width: 288px;
+      height: 48px;
+      margin: 36px 0px 0px;
+      background: #00F3BB;
+      border: none; }
+      body section button a {
+        text-decoration: none;
+        color: #060A24;
+        font-family: "IBM Plex Mono", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px; }
+  @media screen and (min-width: 900px) {
+    body section {
+      margin: 120px auto 5px 200px; } }
