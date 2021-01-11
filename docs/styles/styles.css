@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap");
-body, h1, h2, h3, p, div, span, img, ul {
+body, h1, h2, h3, p, div, span, img, ul, section {
   margin: 0px;
   padding: 0px; }
 
@@ -189,3 +189,23 @@ body {
   @media screen and (min-width: 900px) {
     body section {
       margin: 120px auto 5px 200px; } }
+  body .container-podcast {
+    width: 320px;
+    height: 1203.5px;
+    background-color: #0000EC;
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%); }
+    body .container-podcast .titulo-podcast > h3 {
+      color: #ffffff;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      letter-spacing: 0;
+      line-height: 42px;
+      padding: 64px 147px 21px 16px;
+      box-sizing: border-box; }
+    body .container-podcast .capitulos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 225px);
+      grid-row-gap: 11px;
+      margin: 0px 11px 0px 11px; }
