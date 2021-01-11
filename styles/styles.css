@@ -1,154 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap");
+body, h1, h2, h3, p, div, span, img, ul {
+  margin: 0px;
+  padding: 0px; }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
-
-
-body, header, div, h1, h2, h3, p, img{
-    margin: 0;
-    padding: 0;
-}
-
-header .container-logo{
-    width: 24px;
-    height: 24px;
-    margin: 10px 16px;
-} 
-
-header nav{
-    position: absolute;
-    margin-top: 44px;
-    width: 320px;
-   
-    background: #0000EC;
-} 
-
-header{
-    width: 320px;
-    height: 44px;
+body {
+  /*Primer breakpoint*/ }
+  body header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-header label .shape{
-  width: 18px;
-  height: 12px;
-  display: grid;
-  grid-template-columns: 18px;
-  grid-template-rows: repeat(3, 2px);
-  grid-row-gap: 3px;
-  margin: 16px 19px;
-  cursor: pointer;
-}  
-
-header label .shape span{
-    background: #000;
-}
-
-header nav ul{
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li{
-    list-style: none;
-    margin: 16px 16px 24px;
-}
-
-header nav ul li a{
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 200;
-    line-height: 28px;
-    letter-spacing: 0;    
-}
-
-input[type=checkbox]{
-    display: none;
-}
-
-input[type=checkbox]:checked ~ #menu{
-    display: block;
-}
-
-nav ul{
-    display: none;
-}
-
-#navbar:checked + nav ul {
-    display: block;
-  }
-
-  /*Seccion de sidebar*/
-
-  .container-sidebar{
+    flex-direction: column;
+    max-width: 320px;
+    height: 44px;
+    /*Codigo para la x close*/
+    /*Fragmento gerador de la x close*/ }
+    body header .container-logo {
+      width: 24px;
+      height: 24px;
+      margin: 10px 280px 10px 16px;
+      position: absolute; }
+      body header .container-logo img {
+        display: block;
+        width: 100%;
+        height: auto; }
+    @media screen and (min-width: 900px) {
+      body header .container-logo {
+        width: 36px;
+        height: 36px;
+        margin: 22px auto 22px 60px; } }
+    @media screen and (min-width: 900px) {
+      body header .container-logo {
+        margin: 22px auto 22px 100px; } }
+    body header label {
+      width: 18px;
+      height: 12px;
+      margin: 16px 19px 16px 283px; }
+      body header label .shape {
+        display: grid;
+        grid-template-columns: 18px;
+        grid-template-rows: repeat(3, 2px);
+        grid-row-gap: 3px; }
+        body header label .shape span {
+          background-color: #000000; }
+    @media screen and (max-width: 900px) {
+      body header label {
+        margin: 16px 19px 16px auto; } }
+    body header .shape:before {
+      display: block;
+      width: 14px;
+      height: 2px;
+      content: "";
+      position: absolute;
+      background: #000000;
+      transform: rotate(45deg); }
+    body header .shape:after {
+      width: 14px;
+      height: 2px;
+      content: "";
+      position: absolute;
+      background: #000000;
+      transform: rotate(-45deg); }
+    body header #navbar:not(:checked) ~ label .shape:before, body header #navbar:not(:checked) ~ label .shape:after {
+      display: none; }
+    body header input[type="checkbox"] {
+      display: none; }
+    body header input[type="checkbox"]:checked ~ label #menu-link {
+      display: block; }
+    body header nav ul {
+      display: none; }
+    body header #navbar:checked + label + nav ul {
+      display: block; }
+    body header nav {
+      background-color: #0000EC;
+      width: 100%; }
+      body header nav ul {
+        margin: 16px auto 24px 16px; }
+        body header nav ul li {
+          list-style: none;
+          width: auto;
+          height: 28px;
+          margin: 0px 0px 24px 0px; }
+          body header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            line-height: 28px;
+            font-family: "IBM Plex Mono", sans-serif;
+            font-weight: 300px; }
+          @media screen and (min-width: 900px) {
+            body header nav ul li a {
+              color: #000000; } }
+          body header nav ul li a:hover {
+            color: #00F3BB;
+            text-decoration: line-through; }
+          body header nav ul li a:active {
+            color: #060A24;
+            text-decoration: line-through; }
+        @media screen and (min-width: 900px) {
+          body header nav ul li {
+            display: inline-block;
+            margin: 26px 0px 26px 48px; } }
+      @media screen and (min-width: 900px) {
+        body header nav ul {
+          display: block;
+          margin: 0px 60px 0px auto;
+          float: right; } }
+      @media screen and (min-width: 1440px) {
+        body header nav ul {
+          margin: 0px 100px 0px auto; } }
+    @media screen and (min-width: 900px) {
+      body header nav {
+        background-color: #ffffff; } }
+    body header #navbar:checked ~ label span {
+      background: transparent; }
+  @media screen and (max-width: 900px) {
+    body header {
+      max-width: 900px; } }
+  @media screen and (min-width: 900px) {
+    body header {
       max-width: 100%;
-      height: auto;
-      margin:29px 16px;
-  }
-
-  .container-sidebar h1{
-      display: grid;
-      grid-template-columns: 85px 101px;
-      grid-template-rows: 42px;
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 36px;
-      line-height: 42px;
-      letter-spacing: 0;
-      font-weight: 400;
-      
-  } 
-
-  .container-sidebar h1 span:nth-last-of-type(1){
-    text-decoration: solid 2px line-through;
-  }
-
-  .container-sidebar h2{
-      max-width: 100%;
-      display: grid;
-      grid-template-columns: 212px 10px;
-      grid-template-rows: 42px;
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-weight: 400;
-      font-size: 36px;
-      line-height: 42px;
-      letter-spacing: 0;
-      font-weight: 400;
-  }
-  .container-sidebar .container-parrafo{
-      display: grid;
-      grid-template-columns: 288px;
-      grid-template-rows: 66px 48px;
-      margin-top: 16px;
-  }
-  .container-sidebar .container-parrafo p{
-      font-family: 'IBM Plex Mono', sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 22px;
-  }
-  .container-sidebar .container-parrafo button{
-      background: #00F3BB;
-      border: none;
-      width: 288px;
-      height: 48px;
-      margin-top: 36px;
-  }
-  .container-sidebar .container-parrafo button a{
-      width: 96px;
-      height: 22px;
-      text-decoration: none;
-      font-family: 'IBM Plex Mono', sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 22px;
-      color: #060A24;
-  }
-
-
-
-
- 
- 
-
+      height: 80px; }
+    body label {
+      display: none; } }
