@@ -6,60 +6,56 @@
     <title>Podcast Channel</title>
     <link rel="stylesheet" href="styles/styles.css"/>
     <link rel="icon" type="image/png" href="#">
+   
 
 
 </head>
 <body>
-   <!--Seccion de header nav--> 
- <header>
-   <!--Logo-->  
-   <div class="container-logo">
-     <img src="images/logo.svg" alt="Logo">
-   </div>
+  <!--Seccion header menu de navegacion-->
+  <header>
+    <div class="navegacion">
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <!--Menu hamburguesa-->
    
-  <!--Menu navbar de navegacion--> 
-  <input type="checkbox" id="navbar"> 
-  <label for="navbar">
-    <div class="shape" >
-      <span></span>
-      <span></span>
-      <span></span>
+      <input type="checkbox" id="navbar">
+      <label for="navbar">
+        <div class="shape">
+          <span class="path"></span>
+        </div>
+      </label>   
+        <!--Link-->
+      
+          <nav >
+            <ul id="menu">
+              <li><a href="#">EPISODIOS</a></li>
+              <li><a href="#">NOSOTROS</a></li>
+              <li><a href="#">ENTREVISTAS</a></li>
+              <li><a href="#">TÓPICOS</a></li>
+            </ul>
+          </nav>
     </div>
- </label>
-   <!--Link de navegacion-->
-   <nav>
-     <ul id="menu-link">
-       <li><a href="#">EPISODIOS</a></li>
-       <li><a href="#">NOSOTROS</a></li>
-       <li><a href="#">ENTREVISTAS</a></li>
-       <li><a href="#">TÓPICOS</a></li>
-     </ul>
-   </nav>
- </header>
-<!--Seccion titulo del podcast-->
- <section>
-    <div class="container-titulo">
-      <h1>Hello <span>world</span></h1>
-      <h2>pale blue dot <span>.</span></h2>
-    </div>
-      <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-      <button><a href="">CONOCÉ MÁS</a></button>
-</section>
-<!--Seccion  capitulos del podcast-->
-
-  <div class="container-podcast">
-    <div class="titulo-podcast">
-    <h3>Episodios</h3>
-    </div>
-    <div class="capitulos">
-      <div class="podc1"><img src="images/embed1_.png" alt=""></div>
-      <div class="podc1"><img src="images/embed2_.png" alt=""></div>
-      <div class="podc1"><img src="images/embed3_.png" alt=""></div>
-      <div class="podc1"><iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="225" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-    </div>  
-  </div>
+  </header>
 
  
+
+  <!--Seccion titulo-->
+
+  <section>
+    <div class="container-titulo">
+        <h1><span>Hello</span><span>world</span></h1>
+        <h2><span>pale blue dot</span><span>.</span></h2>
+    </div>
+
+      <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves
+         cada 15 días.</p>
+
+      <button><a href="#">CONOCÉ MÁS</a></button>
+
+
+
+  </section>
 
 
     <script src="https://use.fontawesome.com/174ebcc20a.js"></script>    
