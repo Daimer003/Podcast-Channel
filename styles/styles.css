@@ -247,7 +247,6 @@ section {
     position: relative; }
     .container section .episodios h3 {
       color: #ffffff;
-      box-sizing: border-box;
       font-size: 36px;
       margin: 64px auto 21px 16px; }
     @media screen and (min-width: 768px) {
@@ -280,6 +279,7 @@ section {
     height: auto;
     justify-items: center; }
     .container section .container-historia img {
+      display: block;
       width: 300px;
       height: 519px;
       margin-top: 48px; }
@@ -291,22 +291,172 @@ section {
     .container section .container-historia .historia {
       margin: 27px 16px 54px 16px; }
       .container section .container-historia .historia h3 {
-        font-size: 48px;
-        font-weight: 400;
-        margin-bottom: 24px; }
+        font-size: 36px;
+        margin-bottom: 8px; }
+      @media screen and (min-width: 1440px) {
+        .container section .container-historia .historia h3 {
+          font-size: 48px;
+          font-weight: 400; } }
       .container section .container-historia .historia p {
-        width: 464px;
-        height: 204px;
-        margin: 0;
-        font-size: 16px; }
+        margin: 0; }
   @media screen and (min-width: 768px) {
     .container section .container-historia {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr; }
       .container section .container-historia .historia {
         margin: 253px 20px auto 0px;
-        justify-self: start; } }
+        justify-self: start; }
+        .container section .container-historia .historia p {
+          font-size: 16px;
+          width: 464px;
+          height: 204px;
+          margin: 0; } }
+  .container section .container-invitados {
+    width: 100%;
+    height: auto; }
+    .container section .container-invitados h3 {
+      margin: 0px auto 14px 16px; }
+    @media screen and (min-width: 1440px) {
+      .container section .container-invitados h3 {
+        font-size: 48px;
+        margin: 64px auto 36px 200px; } }
+    .container section .container-invitados .invitados {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr); }
+      .container section .container-invitados .invitados .invitado {
+        width: 100%;
+        height: auto; }
+        .container section .container-invitados .invitados .invitado img {
+          display: block;
+          width: 100%;
+          height: auto; }
+    @media screen and (min-width: 600px) {
+      .container section .container-invitados .invitados {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); } }
+    @media screen and (min-width: 480px) {
+      .container section .container-invitados .topi {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); } }
+    @media screen and (min-width: 768px) {
+      .container section .container-invitados .invitados {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr); } }
+  .container section .topicos {
+    width: 100%;
+    height: auto; }
+    .container section .topicos h3 {
+      margin: 48px auto 24px 15px; }
+    @media screen and (min-width: 1440px) {
+      .container section .topicos h3 {
+        font-size: 48px;
+        margin: 64px auto 56px 200px; } }
+    .container section .topicos .temas {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      justify-items: center; }
+      .container section .topicos .temas .topico {
+        margin-bottom: 36px; }
+        .container section .topicos .temas .topico .topi {
+          display: grid;
+          justify-content: center;
+          width: 320px;
+          height: 130px; }
+          .container section .topicos .temas .topico .topi img {
+            width: 104px;
+            height: 104px;
+            margin: 13px 108px; }
+        .container section .topicos .temas .topico .titulo {
+          font-family: "IBM Plex Sans", sans-serif;
+          font-size: 24px;
+          font-weight: 500; }
+        @media screen and (min-width: 1440px) {
+          .container section .topicos .temas .topico .topi {
+            width: 260px; } }
+        .container section .topicos .temas .topico .titulo {
+          width: 288px;
+          height: auto;
+          text-align: center;
+          margin: 0px 16px; }
+        @media screen and (min-width: 1440px) {
+          .container section .topicos .temas .topico .titulo {
+            width: 220px; } }
+    @media screen and (min-width: 600px) {
+      .container section .topicos .temas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); } }
+    @media screen and (min-width: 1440px) {
+      .container section .topicos .temas {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        margin: 0px 200px; } }
+    .container section .topicos .container-novedades {
+      width: 100%;
+      height: 341px;
+      clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0% 100%);
+      background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+      position: relative; }
+      .container section .topicos .container-novedades .novedades {
+        display: grid;
+        justify-items: center; }
+        .container section .topicos .container-novedades .novedades h3 {
+          color: #ffffff;
+          margin: 64px 16px 36px 16px;
+          text-align: center; }
+        @media screen and (min-width: 1440px) {
+          .container section .topicos .container-novedades .novedades h3 {
+            font-size: 48px;
+            margin: 213px 16px 36px 16px; } }
+        .container section .topicos .container-novedades .novedades button {
+          margin: 0px 16px;
+          padding: 0; }
+          .container section .topicos .container-novedades .novedades button a {
+            font-size: 16px; }
+        @media screen and (min-width: 1440px) {
+          .container section .topicos .container-novedades .novedades button {
+            width: 345px;
+            height: 56px; }
+            .container section .topicos .container-novedades .novedades button a {
+              font-size: 18px; } }
+    @media screen and (min-width: 1440px) {
+      .container section .topicos .container-novedades {
+        height: 518px;
+        clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%); } }
 
 @media screen and (min-width: 320px) {
   .container {
     width: 100%; } }
+
+footer .container-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center; }
+  footer .container-footer .footer-podcast {
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 227px;
+    height: 22px;
+    margin: 24px 47px 16px 47px;
+    text-align: center; }
+  footer .container-footer .footer-redes {
+    margin-bottom: 31px; }
+    footer .container-footer .footer-redes span {
+      width: 16px;
+      height: 28px;
+      margin: 16px 0px 31px 38px;
+      line-height: 28px; }
+
+@media screen and (min-width: 1440px) {
+  footer .container-footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 28px;
+    margin: 36px 100px 0px 0px; }
+    footer .container-footer .footer-podcast {
+      margin: 0; }
+    footer .container-footer .footer-redes {
+      justify-items: flex-end; } }
