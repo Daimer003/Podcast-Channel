@@ -1,6 +1,7 @@
 ### PROYECTO DE PRACTRICA CON ACÁMICA.
 
-![](https://cdn.theorg.com/99999892-2b15-4a4a-9c91-7395cfaede62_thumb.jpg)
+![](https://cdn.theorg.com/99999892-2b15-4a4a-9c91-7395cfaede62_thumb.jpg "Logo Acámica")
+
 
 **Podcast Channel**
 
