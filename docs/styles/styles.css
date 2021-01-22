@@ -199,7 +199,7 @@ header .navegacion .logo {
        border: none;
        background: #00F3BB;
        margin: 36px 16px 24px; }
-     section button a {
+     section button {
        font-family: "IBM Plex Mono", sans-serif;
        font-weight: 500;
        font-size: 16px;
@@ -209,7 +209,7 @@ header .navegacion .logo {
        text-decoration: none; }
      section button:hover {
        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
-     section button:hover a {
+     section button:hover {
        color: #ffffff; }
     @media screen and (min-width: 600px) {
      section button {
@@ -219,7 +219,7 @@ header .navegacion .logo {
     @media screen and (min-width: 1440px) {
      section button {
        margin: 56px 200px 5px; }
-     section button a {
+     section button{
        font-size: 18px; } }
 
 /*Seccion episodios*/
@@ -276,6 +276,11 @@ header .navegacion .logo {
      .container section .episodios .container-episodios {
         grid-gap: 72px;
         margin: 0px 100px; } }
+.container section .episodios .container-episodios .podcast iframe{
+  width: 100%;
+  height: 232px;
+  border: none;
+}        
 
 .container section .container-historia {
      display: grid;
@@ -430,13 +435,13 @@ header .navegacion .logo {
   .container section .topicos .container-novedades .novedades button {
        margin: 0px 16px;
        padding: 0; }
-  .container section .topicos .container-novedades .novedades button a {
+  .container section .topicos .container-novedades .novedades button {
        font-size: 16px; }
 @media screen and (min-width: 1440px) {
       .container section .topicos .container-novedades .novedades button {
           width: 345px;
           height: 56px; }
-      .container section .topicos .container-novedades .novedades button a {
+      .container section .topicos .container-novedades .novedades button {
           font-size: 18px; } }
 
 @media screen and (min-width: 1440px) {
@@ -469,6 +474,10 @@ footer .container-footer .footer-redes {
     grid-template-rows: 1fr;
     grid-column-gap: 38px;
     margin-bottom: 31px; }
+footer .container-footer .footer-redes a{
+  text-decoration: none;
+  color: #000000;
+}    
 footer .container-footer .footer-redes span {
     width: 16px;
     height: 28px;
